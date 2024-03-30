@@ -110,7 +110,7 @@ nav a {
   position: fixed;
   bottom: 20px;
   right: 30px;
-  z-index: 100;
+  z-index: 99;
   background-color: var(--primary);
   outline: none;
   padding: 1rem;
