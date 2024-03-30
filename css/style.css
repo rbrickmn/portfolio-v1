@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400");
+
+:root {
+  --text: #060f0a;
+  --background: #f0faf5;
+  --primary: #41c37c;
+  --secondary: #8ee1b5;
+  --accent: #5bdc97;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text);
+}
+
+body {
+  font-family: "Poppins";
+  font-weight: 400;
+  height: 10000px;
+  background-color: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+html {
+  font-size: 100%;
+} /* 16px */
+
+h1 {
+  font-size: 4.21rem; /* 67.36px */
+  margin-top: -1rem;
+}
+
+h2 {
+  font-size: 3.158rem; /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem; /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem; /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem; /* 21.28px */
+}
+
+small {
+  font-size: 0.75rem; /* 12px */
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Poppins";
+  color: var(--text);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 2rem 1rem;
+  margin-bottom: 8rem;
+  border-bottom: 4px solid var(--accent);
+  background-color: rgba(240, 245, 250, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav li {
+  list-style: none;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.hero-section a {
+  text-decoration: none;
+}
+
+.hero-text {
+  font-size: 1.5rem;
+}
+
+.hero-buttons {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.greeting {
+  font-size: 2rem;
+}
+
+.greeting-under {
+  border: 5px solid var(--primary);
+  margin-bottom: 1rem;
+}
+
+.greeting-highlight {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  margin-right: 1rem;
+  transition: box-shadow 0.8s;
+}
+
+.btn-primary:hover {
+  box-shadow: 0px 4px 50px 0px var(--primary);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  transition: box-shadow 0.8s;
+}
+
+.btn-secondary:hover {
+  box-shadow: 0px 4px 50px 0px var(--secondary);
+}
