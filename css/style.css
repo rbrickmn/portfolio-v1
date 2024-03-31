@@ -2,7 +2,7 @@
 
 :root {
   /* Light mode (main) colors */
-  --text: #060f0a;
+  --text: hsl(147, 43%, 4%);
   --background: #f0faf5;
   --primary: #41c37c;
   --secondary: #8ee1b5;
@@ -24,7 +24,6 @@ html {
 body {
   font-family: "Poppins";
   font-weight: 400;
-  height: 10000px;
   background-color: var(--background);
 }
 
@@ -115,6 +114,7 @@ nav li a {
 nav li a:hover {
   text-decoration: underline;
   text-decoration-color: var(--accent);
+  text-decoration-thickness: 4px;
 }
 
 nav li:active {
@@ -122,7 +122,8 @@ nav li:active {
 }
 
 a {
-  text-decoration-color: var(--background);
+  text-decoration-color: rgba(0, 0, 0, 0);
+  text-decoration-thickness: 4px;
 }
 
 #js-top-btn {
@@ -231,7 +232,7 @@ a {
 /* change display property when undergoing/completing changes */
 
 .under-construction {
-  display: block;
+  display: none;
   position: absolute;
   top: 6.5rem;
   text-align: center;
