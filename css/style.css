@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400");
 
 :root {
+  /* Light mode (main) colors */
   --text: #060f0a;
   --background: #f0faf5;
   --primary: #41c37c;
@@ -80,6 +81,10 @@ button {
 }
 
 header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   position: sticky;
   top: 0;
   padding: 2rem 1rem;
@@ -87,6 +92,7 @@ header {
   border-bottom: 4px solid var(--accent);
   background-color: rgba(240, 245, 250, 0.8);
   backdrop-filter: saturate(180%) blur(20px);
+  z-index: 100;
 }
 
 nav ul {
@@ -97,11 +103,20 @@ nav ul {
 
 nav li {
   list-style: none;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
-nav a {
+nav li:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+}
+
+nav li:active {
+  opacity: 0.5;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -130,10 +145,6 @@ nav a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.hero-section a {
-  text-decoration: none;
 }
 
 .hero-text {
@@ -176,4 +187,22 @@ nav a {
 
 .btn-secondary:hover {
   box-shadow: 0px 4px 50px 0px var(--secondary);
+}
+
+.header-logo {
+  font-weight: bold;
+}
+
+/* change display property when undergoing/completing changes */
+
+.under-construction {
+  display: block;
+  position: absolute;
+  top: 6.5rem;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(246, 246, 98);
+  font-weight: bold;
+  padding: 1rem;
+  z-index: 98;
 }
