@@ -291,9 +291,21 @@ main {
   /* border: 1px solid red; */
 }
 
+.header-container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 /* 2xl */
 @media (max-width: 1536px) {
   .container {
+    max-width: 1280px;
+  }
+
+  .header-container {
     max-width: 1280px;
   }
 }
@@ -303,12 +315,41 @@ main {
   .container {
     max-width: 1024px;
   }
+
+  .header-container {
+    max-width: 1024px;
+  }
 }
 
 /* lg */
 @media (max-width: 1024px) {
+  header {
+    margin-bottom: 4rem;
+  }
+
   .container {
     max-width: 768px;
+  }
+
+  .header-container {
+    max-width: 1536px;
+  }
+
+  .hero-section {
+    flex-direction: column-reverse;
+    justify-content: center;
+    justify-items: center;
+
+  }
+
+  .hero-right {
+    height: 15.875rem;
+    width: 15.875rem;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 4rem;
   }
 }
 
