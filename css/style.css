@@ -104,8 +104,8 @@ nav ul {
 
 nav li {
   list-style: none;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 nav li a {
@@ -146,6 +146,23 @@ a {
 
 #js-top-btn img {
   vertical-align: middle;
+}
+
+.vertical-line {
+  border: 1px solid var(--accent);
+  padding-top: 1.5em;
+}
+
+.header-contact {
+  background-color: var(--primary);
+  padding: 1rem;
+  border-radius: 8px;
+  transition: box-shadow 0.8s;
+}
+
+.header-contact:hover {
+  text-decoration: none;
+  box-shadow: 0px 4px 30px 0px var(--primary);
 }
 
 .hero-section {
@@ -242,6 +259,24 @@ a {
   font-weight: bold;
   padding: 1rem;
   z-index: 98;
+}
+
+/* Page load animation */
+
+main {
+  animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 /* Media queries & container utility class */
