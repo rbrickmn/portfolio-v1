@@ -23,6 +23,10 @@
       <nav>
         <div class="nav-menu">
           <ul class="nav-links">
+            <li class="hamburger">
+              <img src="./icons/menu.png" alt="Menu" />
+            </li>
+
             <li class="nav-item">
               <a href="#">Home</a>
             </li>
@@ -35,11 +39,11 @@
               <a href="#">Projects</a>
             </li>
 
-            <li class="nav-line">
+            <li class="nav-line nav-item">
               <div class="vertical-line"></div>
             </li>
 
-            <li id="js-theme-btn" onclick="toggleBtn()">
+            <li id="js-theme-btn" class="nav-item" onclick="toggleBtn()">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24"
@@ -52,7 +56,7 @@
               </svg>
             </li>
 
-            <li class="nav-contact">
+            <li class="nav-contact nav-item">
               <a class="header-contact" href="#">Contact</a>
             </li>
           </ul>
@@ -102,8 +106,7 @@
         </div>
       </section>
 
-      <section class="about-section container">
-      </section>
+      <section class="about-section container"></section>
     </main>
 
     <button onclick="topFunction()" id="js-top-btn" title="Scroll to top">

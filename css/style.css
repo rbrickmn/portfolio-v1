@@ -277,6 +277,15 @@ li svg {
   text-align: center;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-menu img {
+  vertical-align: middle;
+}
+
 /* change display property when undergoing/completing changes */
 
 .under-construction {
@@ -385,8 +394,12 @@ main {
 }
 
 @media (max-width: 820px) {
-  .nav-menu {
+  .nav-item {
     display: none;
+  }
+
+  .hamburger {
+    display: initial;
   }
 }
 
