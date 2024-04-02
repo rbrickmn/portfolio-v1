@@ -8,6 +8,8 @@
   --secondary: #8ee1b5;
   --accent: #5bdc97;
   --github: #24292f;
+  --header: rgba(240, 250, 245, 0.8);
+  /* Dark mode colors */
 }
 
 * {
@@ -90,7 +92,7 @@ header {
   padding: 2rem 1rem;
   margin-bottom: 8rem;
   border-bottom: 4px solid var(--accent);
-  background-color: rgba(240, 250, 245, 0.8);
+  background-color: var(--header);
   backdrop-filter: saturate(180%) blur(20px);
   z-index: 100;
 }
@@ -149,6 +151,15 @@ li svg {
 
 #js-top-btn img {
   vertical-align: middle;
+}
+
+.theme-dark {
+  --text: #f0f9f4;
+  --background: #050f0a;
+  --primary: #3cbe76;
+  --secondary: #1e7145;
+  --accent: #23a45f;
+  --header: rgba(5, 15, 10, 0.8);
 }
 
 .vertical-line {
