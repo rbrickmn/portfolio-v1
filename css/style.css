@@ -25,7 +25,6 @@ body {
   font-family: "Poppins";
   font-weight: 400;
   background-color: var(--background);
-  height: 10000px;
 }
 
 h1,
@@ -125,6 +124,10 @@ nav li:active {
 a {
   text-decoration-color: rgba(0, 0, 0, 0);
   text-decoration-thickness: 4px;
+}
+
+li svg {
+  cursor: pointer;
 }
 
 #js-top-btn {
@@ -258,6 +261,22 @@ a {
   width: 19.875rem;
 }
 
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin-top: 5rem;
+}
+
+.about-section h2 {
+  text-align: center;
+}
+
+.about-section p {
+  text-align: center;
+}
+
 /* change display property when undergoing/completing changes */
 
 .under-construction {
@@ -296,6 +315,8 @@ main {
   max-width: 1536px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   /* Uncomment below when testing breakpoints */
@@ -360,6 +381,12 @@ main {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .nav-menu {
+    display: none;
   }
 }
 
