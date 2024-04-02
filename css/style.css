@@ -165,6 +165,16 @@ a {
   box-shadow: 0px 4px 30px 0px var(--primary);
 }
 
+.mobile-hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-close {
+  display: none;
+  cursor: pointer;
+}
+
 .hero-section {
   display: flex;
   flex-direction: row;
@@ -230,6 +240,7 @@ a {
 
 .header-logo {
   font-weight: bold;
+  padding-left: 2rem;
 }
 
 .hero-right {
@@ -339,7 +350,6 @@ main {
     flex-direction: column-reverse;
     justify-content: center;
     justify-items: center;
-
   }
 
   .hero-right {
