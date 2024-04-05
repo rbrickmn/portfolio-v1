@@ -274,18 +274,26 @@ li svg {
 
 .about-section {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
+  flex-direction: row;
+  justify-content: space-around;
   margin-top: 5rem;
 }
 
-.about-section h2 {
-  text-align: center;
+.about-left,
+.about-right {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
 }
 
-.about-section p {
-  text-align: center;
+.about-section .greeting {
+  font-weight: bold;
+}
+
+.about-small {
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: bold;
 }
 
 #hamburger {
@@ -304,7 +312,7 @@ main {
 }
 
 .mobile-header {
-  animation: transitionMobile 0.75s
+  animation: transitionMobile 0.75s;
 }
 
 @keyframes transitionIn {
@@ -354,7 +362,7 @@ main {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   /* Uncomment below when testing breakpoints */
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .header-container {
@@ -460,7 +468,7 @@ main {
   .mobile-header .header-logo {
     display: none;
   }
-  
+
   .mobile-header nav ul {
     display: flex;
     flex-direction: column;
