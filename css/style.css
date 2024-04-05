@@ -275,15 +275,16 @@ li svg {
 .about-section {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 5rem;
 }
 
-.about-left,
+.about-left {
+  flex: 1;
+}
+
 .about-right {
-  display: flex;
-  flex-direction: column;
-  max-width: 50%;
+  flex: 1;
 }
 
 .about-section .greeting {
@@ -292,8 +293,43 @@ li svg {
 
 .about-small {
   color: var(--primary);
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: bold;
+}
+
+.about-text {
+  margin: 1rem 0;
+}
+
+.logos {
+  background-color: var(--secondary);
+  box-shadow: 0px 4px 20px 0px var(--secondary);
+  border-radius: 30px;
+  padding: 1rem 0.5rem;
+  margin: 1rem 0;
+  .marquee {
+    max-width: 100%;
+    height: 64px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    .track {
+      position: absolute;
+      white-space: nowrap;
+      will-change: transform;
+      animation: marquee 40s linear infinite;
+      display: flex;
+      gap: 10px;
+    }
+  }
+}
+
+.specialty-education {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 1.5rem 0;
 }
 
 #hamburger {
@@ -351,6 +387,16 @@ main {
   }
 }
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 /* Media queries & container utility class */
 
 .container {
@@ -362,7 +408,7 @@ main {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   /* Uncomment below when testing breakpoints */
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .header-container {
@@ -431,6 +477,18 @@ main {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 4rem;
+  }
+
+  .about-section {
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .specialty-education {
+    gap: 2.5rem;
   }
 }
 
