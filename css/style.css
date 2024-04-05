@@ -154,15 +154,6 @@ li svg {
   vertical-align: middle;
 }
 
-.theme-dark {
-  --text: #f0f9f4;
-  --background: #050f0a;
-  --primary: #3cbe76;
-  --secondary: #1e7145;
-  --accent: #23a45f;
-  --header: rgba(5, 15, 10, 0.8);
-}
-
 .mobile-header {
   display: none;
 }
@@ -446,6 +437,10 @@ main {
 
   .mobile-header {
     display: none;
+  }
+
+  .hero-right {
+    box-shadow: 0px 4px 20px 0px var(--text);
   }
 }
 
