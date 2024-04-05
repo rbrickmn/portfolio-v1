@@ -297,20 +297,6 @@ li svg {
   vertical-align: middle;
 }
 
-/* change display property when undergoing/completing changes */
-
-.under-construction {
-  display: none;
-  position: absolute;
-  top: 6.5rem;
-  text-align: center;
-  width: 100%;
-  background-color: rgb(246, 246, 98);
-  font-weight: bold;
-  padding: 1rem;
-  z-index: 98;
-}
-
 /* Page load animation */
 
 main {
