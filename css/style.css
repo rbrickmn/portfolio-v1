@@ -283,7 +283,8 @@ li svg {
   flex: 1;
 }
 
-.about-section .greeting {
+.about-section .greeting,
+.projects-section .greeting {
   font-weight: bold;
 }
 
@@ -327,6 +328,11 @@ li svg {
   gap: 2rem;
   margin: 1.5rem 0;
 }
+
+.projects-section {
+  text-align: center;
+}
+
 
 #hamburger {
   display: none;
