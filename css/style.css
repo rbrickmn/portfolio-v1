@@ -308,9 +308,12 @@ nav li svg {
 }
 
 .about-small {
-  color: var(--primary);
+  color: var(--text);
   font-size: 1rem;
   font-weight: bold;
+  background-color: var(--primary);
+  padding: 0.1rem 0.3rem;
+  border-radius: 10px;
 }
 
 .about-text {
@@ -351,6 +354,10 @@ nav li svg {
     }
   }
 }
+
+/* Project section styles */
+
+
 
 /* Page load animation */
 
@@ -421,7 +428,7 @@ main {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   /* Uncomment below when testing breakpoints */
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .header-container {
