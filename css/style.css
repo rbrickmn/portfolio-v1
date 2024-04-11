@@ -429,6 +429,7 @@ nav li svg {
   flex-direction: column;
   background-color: var(--background);
   border-radius: 25px;
+  margin-bottom: 5rem;
 }
 
 .contact-wrapper {
@@ -490,6 +491,9 @@ nav li svg {
   padding: 0.5rem;
   border-radius: 50%;
 }
+
+/* Footer styles */
+
 
 /* Page load animation */
 
