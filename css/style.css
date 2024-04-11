@@ -359,6 +359,7 @@ nav li svg {
 .project {
   display: flex;
   justify-content: center;
+  margin-bottom: 10rem;
 }
 
 .project-left {
@@ -373,16 +374,72 @@ nav li svg {
   text-align: left;
 }
 
+.project-right p {
+  margin-bottom: 0.5rem;
+}
+
 .project-left img {
-  height: 20rem;
+  max-height: 20rem;
   border-radius: 25px;
   box-shadow: 0px 2px 20px 0px var(--text);
 }
 
+.tech-used small {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-right: 1rem;
+}
+
 .project-btn-wrapper {
   display: flex;
-  margin: auto 0;
-  align-items: center;
+  margin-top: auto;
+  align-items: stretch;
+}
+
+.github-logo {
+  height: 2rem;
+}
+
+.project-btn {
+  padding: 1rem 2rem;
+  text-align: center;
+  background-color: var(--secondary);
+}
+
+.project-btn > span {
+  line-height: 2rem;
+}
+
+.btn-github {
+  background-color: var(--github);
+  margin-right: 1.5rem;
+}
+
+.btn-github:hover {
+  box-shadow: 0px 2px 20px 0px var(--github);
+}
+
+.btn-live-site,
+.btn-github {
+  transition: box-shadow 0.8s;
+}
+
+.btn-live-site:hover {
+  box-shadow: 0px 2px 20px 0px var(--secondary);
+}
+
+.btn-github span {
+  color: var(--background);
+}
+
+.btn-github > span,
+.btn-github > img {
+  vertical-align: middle;
+}
+
+.btn-github img {
+  margin-left: 0.2rem;
 }
 
 /* Page load animation */
@@ -454,7 +511,7 @@ main {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   /* Uncomment below when testing breakpoints */
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .header-container {
@@ -496,6 +553,11 @@ main {
 
   .hero-right {
     box-shadow: 0px 4px 20px 0px var(--text);
+  }
+
+  .projects-bottom {
+    display: flex;
+    flex-direction: column;
   }
 }
 
