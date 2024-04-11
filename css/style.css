@@ -387,7 +387,7 @@ nav li svg {
 .project-2 {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
 
 .project-right {
@@ -431,19 +431,36 @@ nav li svg {
   border-radius: 25px;
 }
 
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 75%;
+  border: 2px solid var(--accent);
+  border-radius: 25px;
+  padding: 0 2rem;
+}
+
 .contact-cta {
   text-align: center;
-  padding: 1rem 2rem;
+  margin: 0 2rem;
+}
+
+.contact-under {
+  border: 1px solid var(--accent);
 }
 
 .contact-box {
   display: flex;
+  margin: 0 2rem;
 }
 
 .contact-email {
   display: flex;
   align-items: center;
-  margin-right: 4rem;
+  margin: 0 auto;
+  padding-right: 1rem;
 }
 
 .contact-info {
@@ -460,7 +477,7 @@ nav li svg {
 }
 
 .contact-icon {
-  margin-right: 2rem;
+  margin: 1rem;
 }
 
 .contact-icon > span,
@@ -751,6 +768,20 @@ main {
 @media (max-width: 768px) {
   .container {
     max-width: 640px;
+  }
+
+  .contact-section {
+    text-align: center;
+  }
+
+  .contact-email {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .contact-cta {
+    padding-bottom: 0;
   }
 }
 
