@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400");
 
 :root {
-  --text: hsl(147, 43%, 4%);
+  --text: #060f0a;
   --background: #f0faf5;
   --primary: #41c37c;
   --secondary: #8ee1b5;
@@ -304,7 +304,8 @@ nav li svg {
 }
 
 .about-section .greeting,
-.projects-section .greeting {
+.projects-section .greeting,
+.contact-section .greeting {
   font-weight: bold;
 }
 
@@ -353,93 +354,124 @@ nav li svg {
 /* Project section styles */
 
 .projects-section {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+}
+
+.project-btn-wrapper {
+  margin-top: 2rem;
+}
+
+.project-btn {
+  background-color: var(--background);
+}
+
+.btn-img {
+  max-height: 2rem;
+  margin: 0.2rem;
+  margin-left: 0.2rem;
+  vertical-align: middle;
+}
+
+.btn-text {
+  vertical-align: middle;
 }
 
 .project {
   display: flex;
-  justify-content: center;
-  margin-bottom: 10rem;
+  justify-content: space-between;
+  margin-bottom: 8rem;
 }
 
-.project-left {
+.project-2 {
   display: flex;
-  margin-right: 4rem;
+  justify-content: space-between;
+  margin-bottom: 8rem;
 }
 
 .project-right {
+  margin-left: 2rem;
+  text-align: center;
+  padding: 1rem;
+  max-width: 50%;
+}
+
+.project-left {
+  margin-left: 2rem;
+  padding: 1rem;
+  text-align: center;
+  max-width: 50%;
+}
+
+.project-desc {
+  margin: 1rem 0;
+}
+
+.project-small {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0 1rem;
+  background: var(--text);
+  color: var(--background);
+  border-radius: 15px;
+}
+
+.project-img {
+  max-height: 20rem;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px 0px var(--text);
+}
+/* Contact section styles */
+
+.contact-section {
   display: flex;
   flex-direction: column;
-  margin-right: 4rem;
-  text-align: left;
-}
-
-.project-right p {
-  margin-bottom: 0.5rem;
-}
-
-.project-left img {
-  max-height: 20rem;
+  background-color: var(--background);
   border-radius: 25px;
-  box-shadow: 0px 2px 20px 0px var(--text);
 }
 
-.tech-used small {
-  font-size: 1rem;
-  font-weight: bold;
-  color: var(--primary);
-  margin-right: 1rem;
-}
-
-.project-btn-wrapper {
-  display: flex;
-  margin-top: auto;
-  align-items: stretch;
-}
-
-.github-logo {
-  height: 2rem;
-}
-
-.project-btn {
-  padding: 1rem 2rem;
+.contact-cta {
   text-align: center;
-  background-color: var(--secondary);
+  padding: 1rem 2rem;
 }
 
-.project-btn > span {
-  line-height: 2rem;
+.contact-box {
+  display: flex;
 }
 
-.btn-github {
-  background-color: var(--github);
-  margin-right: 1.5rem;
+.contact-email {
+  display: flex;
+  align-items: center;
+  margin-right: 4rem;
 }
 
-.btn-github:hover {
-  box-shadow: 0px 2px 20px 0px var(--github);
+.contact-info {
+  display: flex;
+  flex-direction: column;
 }
 
-.btn-live-site,
-.btn-github {
-  transition: box-shadow 0.8s;
+.contact-type {
+  font-weight: bold;
 }
 
-.btn-live-site:hover {
-  box-shadow: 0px 2px 20px 0px var(--secondary);
+.contact-info small {
+  font-size: 1.2rem;
 }
 
-.btn-github span {
-  color: var(--background);
+.contact-icon {
+  margin-right: 2rem;
 }
 
-.btn-github > span,
-.btn-github > img {
+.contact-icon > span,
+.contact-icon > img {
   vertical-align: middle;
 }
 
-.btn-github img {
-  margin-left: 0.2rem;
+.contact-icon img {
+  background-color: var(--primary);
+  padding: 0.5rem;
+  border-radius: 50%;
 }
 
 /* Page load animation */
@@ -511,7 +543,7 @@ main {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   /* Uncomment below when testing breakpoints */
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .header-container {
@@ -559,6 +591,14 @@ main {
     display: flex;
     flex-direction: column;
   }
+
+  .project-left {
+    max-width: 100%;
+  }
+
+  .project-right {
+    max-width: 100%;
+  }
 }
 
 /* lg */
@@ -605,6 +645,39 @@ main {
 
   .about-text {
     margin: auto;
+  }
+
+  .project {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .project-2 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 2rem;
+  }
+
+  .project-right {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .project-left {
+    max-width: 100%;
+    margin: 2rem 0;
+  }
+
+  .contact-section {
+    justify-content: center;
+  }
+
+  .contact-box {
+    flex-direction: column;
+  }
+
+  .contact-email {
+    margin: 1rem 0;
   }
 }
 
@@ -659,6 +732,18 @@ main {
 
   .mobile-header nav ul li a:hover {
     text-decoration: none;
+  }
+
+  .project-img {
+    max-height: 15rem;
+  }
+
+  .project-left {
+    margin: 0;
+  }
+
+  .project-right {
+    margin: 0;
   }
 }
 

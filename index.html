@@ -44,7 +44,7 @@
             </li>
 
             <li class="nav-contact nav-item">
-              <a class="header-contact" href="#">Contact</a>
+              <a class="header-contact" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -73,7 +73,7 @@
             </li>
 
             <li class="nav-item">
-              <a href="#" onclick="toggleMenu()">Contact</a>
+              <a href="#contact" onclick="toggleMenu()">Contact</a>
             </li>
 
             <li id="hamburger">
@@ -240,34 +240,38 @@
         </div>
 
         <div class="projects-bottom container">
+          <!-- <span>Coming soon!</span> -->
           <div class="project">
-            <div class="project-left">
+            <div class="project-right">
               <img
                 src="./images/pulse-designs-screenshot.jpg"
                 alt="Pulse Designs"
+                class="project-img"
               />
             </div>
-            <div class="project-right">
-              <h3>Pulse Designs</h3>
-              <p>Fictional web design studio homepage.</p>
+            <div class="project-left">
+              <p class="greeting">Pulse Designs</p>
+              <p class="project-desc">
+                Landing page for a fictional web design studio.
+              </p>
 
-              <div class="tech-used">
-                <small>HTML</small>
-                <small>CSS</small>
-              </div>
+              <small class="project-small">HTML</small>
+              <small class="project-small">CSS</small>
 
               <div class="project-btn-wrapper">
                 <a
                   href="https://github.com/rbrickmn/pulse-designs-site"
                   target="_blank"
                 >
-                  <button class="project-btn btn-github">
-                    <span>View on GitHub</span>
-                    <img
-                      src="./icons/github-mark-white.png"
-                      alt="GitHub Logo"
-                      class="github-logo"
-                    />
+                  <button class="project-btn">
+                    <span class="btn-text">View on GitHub</span>
+                    <span class="btn-icon">
+                      <img
+                        src="./icons/github-mark.png"
+                        alt="GitHub Logo"
+                        class="btn-img"
+                      />
+                    </span>
                   </button>
                 </a>
 
@@ -275,11 +279,104 @@
                   href="https://rbrickmn.github.io/pulse-designs-site/"
                   target="_blank"
                 >
-                  <button class="project-btn btn-live-site">
-                    <span>Live Site</span>
+                  <button class="project-btn">
+                    <span class="btn-text">Live Site</span>
+                    <span class="btn-icon">
+                      <img
+                        src="./icons/new_tab.png"
+                        alt="New Tab icon"
+                        class="btn-img"
+                      />
+                    </span>
                   </button>
                 </a>
               </div>
+            </div>
+          </div>
+
+          <div class="project-2">
+            <div class="project-right">
+              <p class="greeting">Coming Soon!</p>
+              <p class="project-desc">
+                Stay tuned to see my next project!
+              </p>
+
+              <small class="project-small">HTML</small>
+              <small class="project-small">CSS</small>
+              <small class="project-small">JAVASCRIPT</small>
+
+              <div class="project-btn-wrapper">
+                <a
+                  href="https://github.com/rbrickmn"
+                  target="_blank"
+                >
+                  <button class="project-btn">
+                    <span class="btn-text">View on GitHub</span>
+                    <span class="btn-icon">
+                      <img
+                        src="./icons/github-mark.png"
+                        alt="GitHub Logo"
+                        class="btn-img"
+                      />
+                    </span>
+                  </button>
+                </a>
+
+                <a
+                  href="https://github.com/rbrickmn"
+                  target="_blank"
+                >
+                  <button class="project-btn">
+                    <span class="btn-text">Live Site</span>
+                    <span class="btn-icon">
+                      <img
+                        src="./icons/new_tab.png"
+                        alt="New Tab icon"
+                        class="btn-img"
+                      />
+                    </span>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="project-left">
+              <img
+                src="./images/coming-soon.jpg"
+                alt="Pulse Designs"
+                class="project-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section container" id="contact">
+        <div class="contact-cta container">
+          <small class="about-small">CONTACT ME</small>
+          <p class="greeting">Let's talk! &#128231;</p>
+        </div>
+        <div class="contact-box container">
+          <div class="contact-email">
+            <div class="contact-icon">
+              <span>
+                <img src="./icons/email.png" alt="Email icon" />
+              </span>
+            </div>
+            <div class="contact-info">
+              <small class="contact-type">E-mail</small>
+              <small class="contact-detail">rbrickmn@gmail.com</small>
+            </div>
+          </div>
+
+          <div class="contact-email">
+            <div class="contact-icon">
+              <span>
+                <img src="./icons/location.png" alt="Location icon" />
+              </span>
+            </div>
+            <div class="contact-info">
+              <small class="contact-type">Location</small>
+              <small class="contact-detail">United States</small>
             </div>
           </div>
         </div>
