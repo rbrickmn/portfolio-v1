@@ -432,6 +432,12 @@ nav li svg {
   margin-bottom: 5rem;
 }
 
+.contact-section a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+}
+
 .contact-wrapper {
   display: flex;
   flex-direction: column;
@@ -494,6 +500,15 @@ nav li svg {
 
 /* Footer styles */
 
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+footer p {
+  font-size: 1rem;
+}
 
 /* Page load animation */
 
