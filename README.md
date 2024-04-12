@@ -1,4 +1,4 @@
-# Portfolio Website
+# Portfolio Website &#128075;
 ![portfolio-screenshot](./images/portfolio-screenshot.jpg)
 My current portfolio website built in HTML, CSS, and JavaScript
 
