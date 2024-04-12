@@ -89,6 +89,13 @@ a {
   text-decoration-thickness: 4px;
 }
 
+.anchor {
+  display: block;
+  visibility: hidden;
+  height: 4rem;
+  margin-top: -3rem;
+}
+
 /* Header and nav styles */
 
 header {
@@ -502,12 +509,26 @@ nav li svg {
 
 footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  vertical-align: middle;
+  align-items: center;
   padding: 2rem;
 }
 
 footer p {
   font-size: 1rem;
+}
+
+.footer-links {
+  vertical-align: middle;
+  padding: 1rem;
+  img {
+    max-height: 2rem;
+    vertical-align: middle;
+  }
+  a {
+    padding: 0 0.5rem;
+  }
 }
 
 /* Page load animation */
@@ -801,6 +822,10 @@ main {
 
   .contact-cta {
     padding-bottom: 0;
+  }
+
+  .anchor {
+    height: 6rem;
   }
 }
 
