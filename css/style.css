@@ -109,6 +109,7 @@ header {
   margin-bottom: 8rem;
   border-bottom: 4px solid var(--accent);
   background-color: var(--header);
+  -webkit-backdrop-filter: saturate(180%) blur(20px); /* Fixes blur for safari */
   backdrop-filter: saturate(180%) blur(20px);
   z-index: 100;
 }
