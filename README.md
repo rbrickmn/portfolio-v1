@@ -13,5 +13,5 @@ This site features HTML, CSS, and vanilla JavaScript. As my skill set continues 
 
 ## Attributions &#128226;
 
-- Icons for the tech stack section are from [DEVICON](https://https://devicon.dev/).
+- Icons for the tech stack section are from [DEVICON](https://devicon.dev/).
 - "Poppins" font from [Google Fonts](https://fonts.google.com/specimen/Poppins).
