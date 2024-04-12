@@ -851,4 +851,8 @@ main {
     flex-direction: column;
     gap: 1rem;
   }
+
+  .footer-logo {
+    height: 1rem;
+  }
 }
