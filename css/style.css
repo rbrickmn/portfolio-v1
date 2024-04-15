@@ -431,7 +431,14 @@ nav li svg {
   max-height: 20rem;
   border-radius: 15px;
   box-shadow: 0px 4px 20px 0px var(--text);
+  transition: all 0.8s;
 }
+
+.project-img:hover {
+  box-shadow: 0px 0px 20px 0px var(--text);
+  transform: translateY(-10px);
+}
+
 /* Contact section styles */
 
 .contact-section {
